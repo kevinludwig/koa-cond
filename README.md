@@ -26,6 +26,15 @@ const app = Koa();
 
 const rawBody = (ctx, next) => {
     /* capture request as buffer */
+    ctx.request.rawBody = await new Promise((resolve) => {
+        const chunks = [];
+        ctx.request.on('data', chunk => {
+            chunks.push(chunk);
+        });
+        ctx.req.on('end', () => {
+            resolve(Buffer.concat(chunks));
+        });
+    });
 }
 
 app.use(cond(

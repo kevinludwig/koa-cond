@@ -1,6 +1,6 @@
 {
   "name": "koa-cond",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "conditionally include koa middleware",
   "main": "index.js",
   "scripts": {

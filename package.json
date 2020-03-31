@@ -1,0 +1,19 @@
+{
+  "name": "koa-cond",
+  "version": "1.0.0",
+  "description": "conditionally include koa middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinludwig/koa-cond.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "koa": "^2.11.0",
+    "mocha": "^7.1.1",
+    "supertest": "^4.0.2"
+  }
+}
